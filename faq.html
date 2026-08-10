@@ -1,155 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>よくある質問 - JQ Alert</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="JQ Alert に関するよくある質問。">
+    <title>よくある質問 | JQ Alert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="faq-page">
-
-    <header>
-        <div class="container header-container">
-            <h1 class="logo"><a href="index.html">JQ Alert</a></h1>
-            <nav class="global-nav">
-                <a href="faq.html" aria-current="page">よくある質問</a>
-                <a href="terms.html">利用規約</a>
-            </nav>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark"></span>JQ Alert</a>
+            <nav class="nav-links" aria-label="メインナビゲーション"><a href="index.html#features">機能</a><a href="faq.html"
+                    aria-current="page">よくある質問</a><a href="terms.html">利用規約</a></nav><a class="nav-cta"
+                href="https://chromewebstore.google.com/detail/japan-quake-alert/eicpbodfpiaimdkjbmbiomgefjflgibj"
+                target="_blank" rel="noopener">Chrome に追加 ↗</a>
         </div>
     </header>
-
-    <div class="page-hero">
-        <div class="container">
-            <p class="page-eyebrow">Support</p>
-            <h1 class="page-title">よくある質問</h1>
-            <ul class="faq-keypoints">
-                <li>この拡張機能は <strong>補助情報</strong> です。防災情報は信頼できる複数経路で確認するようにしてください。</li>
-                <li>通知の問題は <strong>設定・音量・ブラウザ状態</strong> の順で確認すると解決しやすくなります。</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container page-content">
-        <section class="intent-grid" aria-label="目的別ナビゲーション">
-            <a href="#faq-setup" class="intent-card">
-                <p class="intent-badge is-action">最初に確認</p>
-                <h2>導入・基本仕様</h2>
-                <p>料金、通知の前提、対応範囲など、利用開始時に確認したい内容。</p>
-            </a>
-            <a href="#faq-notify" class="intent-card">
-                <p class="intent-badge is-state">比較して確認</p>
-                <h2>通知・動作トラブル</h2>
-                <p>音が鳴らない、通知が遅いなど、症状ごとに確認ポイントを整理。</p>
-            </a>
-            <a href="#faq-safety" class="intent-card">
-                <p class="intent-badge is-warning">安全面の確認</p>
-                <h2>権限・安全性</h2>
-                <p>閲覧履歴権限の用途や、データ取り扱いに関する説明。</p>
-            </a>
-        </section>
-
-        <div class="faq-list">
-            <section class="faq-section" id="faq-setup" aria-labelledby="setup-title">
-                <h2 class="faq-section-title" id="setup-title">導入・基本仕様</h2>
-
-                <div class="faq-item">
-                    <h3 class="question">JQ Alert とは何ですか？</h3>
-                    <p class="answer">JQ Alert は、緊急地震速報をリアルタイムで受信し、ブラウザ上で通知する Chrome
-                        拡張機能です。<br>あくまでも参考情報としてご利用ください。
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="question">利用料金はかかりますか？</h3>
-                    <p class="answer">無料ですべての機能をご利用いただけます。課金機能などはありません。</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="question">ブラウザを閉じていても通知は届きますか？</h3>
-                    <p class="answer">はい、届きます。バックグラウンドで動作していることをシステムトレイで確認できます。ブラウザの設定でバックグラウンドの実行を許可する必要があります。</p>
-                </div>
-            </section>
-
-            <section class="faq-section" id="faq-notify" aria-labelledby="notify-title">
-                <h2 class="faq-section-title" id="notify-title">通知・動作トラブル</h2>
-
-                <div class="faq-item">
-                    <h3 class="question">通知音が鳴りません。</h3>
-                    <div class="answer">
-                        <p>以下の順で確認してください。</p>
-                        <ol>
-                            <li>PC の音量がミュートになっていないか。</li>
-                            <li>拡張機能の設定画面で「通知音」がオンになっているか。</li>
-                            <li>ブラウザのタブを長時間操作していない場合、省電力機能で音が再生されない場合があるので拡張機能を再起動。</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="question">自分の住んでいる地域だけ通知を受け取りたいです。</h3>
-                    <p class="answer">
-                        可能です。拡張機能のアイコンをクリックし、設定（歯車アイコン）から「都道府県フィルター」を設定してください。指定した地域の震度情報のみを通知するようにカスタマイズできます。</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 class="question">情報の遅延はありますか？</h3>
-                    <p class="answer">データの取得経路や通信環境により、数秒程度の遅延が発生する場合があります。携帯電話のエリアメール（緊急速報メール）等と併用してご利用いただくことを強く推奨します。
-                    </p>
-                </div>
-            </section>
-
-            <section class="faq-section" id="faq-safety" aria-labelledby="safety-title">
-                <h2 class="faq-section-title" id="safety-title">権限・安全性</h2>
-
-                <div class="faq-item">
-                    <h3 class="question">閲覧履歴の読み取りという権限は何のためですか？</h3>
-                    <p class="answer">EEW
-                        受信時に保存されたリンクを開く際、すでに開かれているか確認し、複数回開かないようにするためのものです。すべてユーザーの媒体内で完結するためこれらの情報が保存されたり外部に送信することはありません。
-                    </p>
-                </div>
-            </section>
-
-        </div>
-
-        <section class="support-panel" aria-label="次の行動">
-            <h2>解決しない場合</h2>
-            <p>症状が再現する場合は、発生時刻・OS・ブラウザバージョンを控えたうえで、拡張機能内からお問い合わせください。</p>
-            <div class="support-actions">
-                <a href="https://chromewebstore.google.com/detail/japan-quake-alert/eicpbodfpiaimdkjbmbiomgefjflgibj"
-                    target="_blank" rel="noopener" class="btn-primary">Chrome ウェブストアを開く</a>
-                <a href="terms.html" class="btn-secondary">利用規約を確認</a>
+    <main>
+        <section class="inner-hero">
+            <div class="container">
+                <p class="eyebrow">Support</p>
+                <h1>よくある質問</h1>
+                <p>インストールや通知設定について、よくいただく質問をまとめました。</p>
             </div>
         </section>
-
-        <div class="btn-center">
-            <a href="index.html" class="btn-primary">トップページに戻る</a>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">JQ Alert</a>
-                    <p>地震発生時に即座に通知する<br>Chrome 拡張機能。完全無料。</p>
-                </div>
-                <div class="footer-nav-group">
-                    <p class="footer-nav-title">Links</p>
-                    <a href="faq.html">よくある質問</a>
-                    <a href="terms.html">利用規約</a>
-                    <a href="https://chromewebstore.google.com/detail/jq-alert/eicpbodfpiaimdkjbmbiomgefjflgibj"
-                        target="_blank" rel="noopener">Chromeに追加</a>
-                </div>
+        <section class="faq-content container">
+            <nav class="jump-nav" aria-label="質問カテゴリー"><a href="#start">はじめに</a><a href="#notifications">通知について</a><a
+                    href="#safety">安全について</a></nav>
+            <div class="faq-groups">
+                <section id="start">
+                    <h2>はじめに</h2>
+                    <details open>
+                        <summary>JQ Alert とは何ですか？</summary>
+                        <div>
+                            <p>JQ Alert は、緊急地震速報と地震情報をリアルタイムで確認できる Chrome 拡張機能です。ブラウザ上で通知を受け取り、最新の情報をすぐに確認できます。</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>利用料金はかかりますか？</summary>
+                        <div>
+                            <p>JQ Alert は無料で利用できます。</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>どのブラウザで使えますか？</summary>
+                        <div>
+                            <p>Google Chrome および Chrome 拡張機能に対応した Chromium ベースのブラウザで利用できます。</p>
+                        </div>
+                    </details>
+                </section>
+                <section id="notifications">
+                    <h2>通知について</h2>
+                    <details>
+                        <summary>通知が届かないときは？</summary>
+                        <div>
+                            <ol>
+                                <li>OS とブラウザの通知が許可されているか確認してください。</li>
+                                <li>拡張機能の設定で、通知する震度や地域が有効か確認してください。</li>
+                                <li>ブラウザのタブを閉じている場合や、端末の省電力設定によって通知が遅れることがあります。</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>自分の地域だけ通知できますか？</summary>
+                        <div>
+                            <p>はい。拡張機能の設定で通知対象地域を選択できます。必要に応じて、震度の条件も調整してください。</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>通知音や読み上げは変更できますか？</summary>
+                        <div>
+                            <p>通知音と音声読み上げは、拡張機能の設定画面から調整できます。</p>
+                        </div>
+                    </details>
+                </section>
+                <section id="safety">
+                    <h2>安全について</h2>
+                    <details>
+                        <summary>緊急地震速報が届いたら何をすればよいですか？</summary>
+                        <div>
+                            <p>あわてず、まず身の安全を確保してください。机の下に身を隠す、頭を守る、火のそばから離れるなど、周囲の状況に応じて行動してください。通知は迅速な行動の補助であり、すべての地震で事前に届くものではありません。
+                            </p>
+                        </div>
+                    </details>
+                </section>
             </div>
-            <div class="footer-bottom">
-                &copy; 2024-2026 JQ Alert Project. All Rights Reserved.
+            <aside class="support-callout">
+                <p class="eyebrow">Get started</p>
+                <h2>準備はできましたか？</h2>
+                <p>JQ Alert を追加して、通知設定を確認しましょう。</p><a class="button button-primary"
+                    href="https://chromewebstore.google.com/detail/japan-quake-alert/eicpbodfpiaimdkjbmbiomgefjflgibj"
+                    target="_blank" rel="noopener">Chrome に追加 ↗</a>
+            </aside>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><a class="brand" href="index.html"><span class="brand-mark"></span>JQ Alert</a>
+                <p>地震情報を、必要なときに。</p>
             </div>
+            <div class="footer-links"><a href="index.html#features">機能</a><a href="faq.html">よくある質問</a><a
+                    href="terms.html">利用規約</a></div>
         </div>
+        <div class="container copyright">© 2024–2026 JQ Alert Project</div>
     </footer>
-
 </body>
 
 </html>
