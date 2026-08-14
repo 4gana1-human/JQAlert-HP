@@ -1,0 +1,10 @@
+{
+  "name": "JQ Alert",
+  "short_name": "JQ Alert",
+  "description": "緊急地震速報と地震情報を確認できるChrome拡張機能",
+  "icons": [{ "src": "data/images/icon-128.png", "sizes": "128x128", "type": "image/png" }],
+  "theme_color": "#d92d38",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "lang": "ja"
+}
